@@ -1,0 +1,4 @@
+.ex5 header {
+    padding: 2rem;
+    grid-column: 1/4;
+}
