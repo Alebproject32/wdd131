@@ -1,0 +1,136 @@
+body{
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0;
+}
+
+
+h1{
+    background-color: #6495ed;
+    color: white; 
+    padding: 10px 0; 
+    text-align: center;
+}
+
+header h1 { 
+    margin: 0; 
+}
+
+nav {
+    background-color: black;
+    display: grid;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 8rem;
+}
+
+nav a:hover { 
+    text-decoration: underline; 
+}
+
+.menu li{
+    display: inline-block;
+    flex: 1 1 auto;    
+}
+
+main { 
+    display: flex; 
+    justify-content: space-between; 
+    padding: 20px;
+}
+
+.container {
+    background-color: white; 
+    padding: 30px; 
+    border-radius: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    width: 65%;
+    
+}
+
+.container2 {
+    background-color: white; 
+    padding: 30px; 
+    border-radius: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    width: 25%
+}
+h2 {
+    margin: 3%;
+}
+section h2, h3{
+    background-color:midnightblue;
+    margin-top: 0;
+    text-align: center;
+    color: aliceblue;
+}
+
+.card-left .Venezuela img { 
+    width: 65%; 
+    border-radius: 10px; 
+}
+
+.highlight{
+    color: yellow;
+}
+
+ footer{
+    background-color: #6495ed;
+    color: white; 
+    padding: 10px 0; 
+    text-align: center; 
+}
+
+footer p { 
+    margin: 0; 
+}
+
+.picture {
+    width: 20%;
+    height: 40%;
+    float: right;
+    vertical-align: top;
+    
+}
+
+.box2 {
+    width: 60%;
+    height: 20%;
+    display: flexbox;
+    justify-content: space-between; 
+}
+
+.flag {
+    float: left;
+    padding: 5%;
+}
+
+.box2 .p {
+    width: 50%;
+    height: 30%;
+    text-align: justify;
+    justify-content: space-between;
+}
+
+
+.card-left .box3 {
+    display: flexbox;
+    justify-content: space-between;
+}
+    
+.box3 .p {
+    width: 50%;
+    height: 30%;
+    text-align: left;
+}
+
+.box4 ul li a{
+    width: 10%;
+    height: 15%;
+    vertical-align: middle;
+}
+
+

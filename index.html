@@ -1,11 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WDD 131</title>
+    <title>"WDD 131 - Dynamic Web Fundamentals - Alejandro I. Pérez"</title>
+    <meta name="author" content="Alejandro Pérez" />
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals - Alejandro Isaac Pérez Brito, I am currently study my major in Professional Study at BYU-Idaho through BYU Pathway Worldwide to get a new carrer with the English Language and Software Development."
+    />
+    <link href="week01/styles/base.css" rel="stylesheet" />
+    <scripts src="getdates.js" defer></scripts>
   </head>
   <body>
-    <h1>WDD 131 - Alejandro Pérez</h1>
+    <header>
+      <h1>
+        WDD 131 - Dynamic Web Fundamentals -
+        <code style="color: yellow"> Alejandro Pérez </code>
+      </h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="#" title="Linkedln">Linkedln</a></li>
+          <li>
+            <a href="https://byui.instructure.com/." title="I-Learn">I-Learn</a>
+          </li>
+          <li>
+            <a
+              href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
+              title="Scripture"
+              >Scripture</a
+            >
+          </li>
+          <li><a href="#" title="Final Project">Final Project</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="container">
+        <section class="card-left">
+          <h2>About Me</h2>
+          <div class="box3">
+            <img class="picture" src="images/image1.jpg.jpeg" alt="Profile Picture">
+            <p>
+              My name is Alejandro, some of my friends call me by my short name
+              Alejo or Ale. I am native from Venezuela and I'm living in the Capital
+              city "Caracas". I am a Professional in Human Resources Administration,
+              and currently I love developing new skills in several areas like
+              Technology (Web and computer programming, Telecommunication
+              Engineering) and English Language.
+            </p>            
+          </div>
+        <section class="Venezuela">
+          <h2>Venezuela</h2>
+          <div class="box2">
+            <img class="flag" src="images/oficial_flag_venezuela.jpg.jpg" alt="Official Flag of Venezuela">
+            <p>
+              Venezuela is a natural beauty in the Caribbean Area that have the next
+              natural resources, Angel Falls, located in Canaima National Park. Its
+              Beaches with pink, white,and pearl sands beaches along the Caribbean
+              sea and Atlantic Coast. As well as Mountains, the Andean Mountain
+              Range and Tepuis building a strong jungle at the South of the country.
+            </p>
+          </div>
+        </section>
+      </div>
+      <div class="container2">
+        <section class="card-right">
+          <h3>Web Dev. Resources</h3> 
+            <ul>
+              <li><a class="box4" href="https://codepen.io/" title="Codepen">Codepen</a></li>
+              <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/JavaScript_basics"
+                title="Javascript"
+                >Javascript</a>
+              </li>
+              <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/CSS_basics"
+                title="CSS_basics"
+                >CSS_basics</a>
+              </li>
+            </ul>
+        </section>
+        </div>
+    </main>
+    <footer>
+      <p><code>&#169</code><span id="currentYear"></span> <script>
+        document.addEventListener('DOMContentLoaded', function() {
+         var currentYear = new Date().getFullYear();
+         document.getElementById('currentYear').textContent = currentYear;
+        });
+        </script>Alejandro Pérez <code>Caracas - Venezuela</code></p>
+      <p> <span class="highlight">Last Modified: </span><span id="lastModified"></span><script>
+      document.lastModified('DOMContentLoaded', function() {
+        var date = new Date(document.lastModified);
+        document.getElementById("Last Modified:").innerHTML = "The document was last modified on : " + date;})
+     </script></p>
+    </footer>
   </body>
 </html>
