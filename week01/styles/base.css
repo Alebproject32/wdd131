@@ -69,8 +69,9 @@ section h2, h3{
 }
 
 .card-left .Venezuela img { 
-    width: 65%; 
+    width: 45%; 
     border-radius: 10px; 
+    align-items: left;
 }
 
 .highlight{
@@ -88,18 +89,12 @@ footer p {
     margin: 0; 
 }
 
-.picture {
-    width: 20%;
-    height: 40%;
-    float: right;
-    vertical-align: top;
-    
-}
+
 
 .box2 {
     width: 60%;
     height: 20%;
-    display: flexbox;
+    display: flex;
     justify-content: space-between; 
 }
 
@@ -111,18 +106,25 @@ footer p {
 .box2 .p {
     width: 50%;
     height: 30%;
-    text-align: justify;
+    text-align: right;
     justify-content: space-between;
 }
 
 
 .card-left .box3 {
-    display: flexbox;
+    display: flex;
     justify-content: space-between;
+}
+
+.box3 .picture {
+    width: 20%;
+    height: 40%;
+    float: right;
+    vertical-align: top;
 }
     
 .box3 .p {
-    width: 50%;
+    width: 40%;
     height: 30%;
     text-align: left;
 }
