@@ -46,7 +46,7 @@ main {
     padding: 30px; 
     border-radius: 20px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
-    width: 65%;
+    width: 55%;
     
 }
 
@@ -67,8 +67,8 @@ section h2, h3{
     color: aliceblue;
 }
 
-.card-left .Venezuela img { 
-    width: 45%; 
+.card-left .Venezuela { 
+    width: 100%; 
     border-radius: 10px; 
     align-items: left;
 }
@@ -91,22 +91,23 @@ footer p {
 
 
 .box2 {
-    width: 60%;
+    width: 80%;
     height: 20%;
     display: flex;
     justify-content: space-between; 
 }
 
-.flag {
+.flag img {
     float: left;
-    padding: 5%;
+    
 }
 
 .box2 .p {
-    width: 50%;
+    width: 8%;
     height: 30%;
-    text-align: right;
-    justify-content: space-between;
+    justify-content: space-around;
+    
+    
 }
 
 

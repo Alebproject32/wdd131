@@ -90,7 +90,7 @@ footer p {
 
 .picture {
     width: 20%;
-    height: 40%;
+    height: 30%;
     float: right;
     vertical-align: top;
     
@@ -99,38 +99,49 @@ footer p {
 .box2 {
     width: 60%;
     height: 20%;
-    display: flexbox;
+    display: flex;
     justify-content: space-between; 
 }
 
 .flag {
     float: left;
-    padding: 5%;
+    padding: 3%;
+    height: 2%;
+    width: 50%;
 }
 
 .box2 .p {
-    width: 50%;
+    width: 80%;
     height: 30%;
-    text-align: justify;
-    justify-content: space-between;
+    text-align: right;
+    justify-content: space-around;
 }
 
 
 .card-left .box3 {
-    display: flexbox;
+    display: flex;
     justify-content: space-between;
+    align-items: center;
 }
     
 .box3 .p {
     width: 50%;
     height: 30%;
     text-align: left;
+    align-items: start;
 }
 
 .box4 ul li a{
     width: 10%;
     height: 15%;
     vertical-align: middle;
+}
+
+.container .Venezuela .box2 {
+    display: flex;
+    justify-content: space-between;
+    
+
 }
 
 
