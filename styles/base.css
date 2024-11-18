@@ -89,10 +89,10 @@ footer p {
 }
 
 .picture {
-    width: 20%;
-    height: 30%;
+    width: 10%;
+    height: 60%;
     float: right;
-    vertical-align: top;
+    
     
 }
 
@@ -114,27 +114,27 @@ footer p {
     width: 80%;
     height: 30%;
     text-align: right;
-    justify-content: space-around;
+    
 }
 
 
 .card-left .box3 {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    
 }
     
 .box3 .p {
-    width: 50%;
+    width: 30%;
     height: 30%;
     text-align: left;
-    align-items: start;
+    
 }
 
-.box4 ul li a{
-    width: 10%;
-    height: 15%;
+.container2 li a {
+    display: list-item;
     vertical-align: middle;
+
 }
 
 .container .Venezuela .box2 {
