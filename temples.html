@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 131 - Dynamic Web Fundamentals - Alejandro I. Pérez</title>
+    <meta name="author" content="Alejandro I. Pérez" />
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals - Alejandro Isaac Pérez Brito, I am currently study my major in Professional Study at BYU-Idaho through BYU Pathway Worldwide to get a new carrer with the English Language and Software Development."
+    />
+    <link rel="stylesheet" href="styles/temples.css" />
+    <link rel="stylesheet" href="styles/temples-large.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Temple Album</h1>
+      <nav>
+        <ul>
+          <li><a href="https://www.linkedin.com/">Home</a></li>
+          <li><a href="https://byui.instructure.com/">Old</a></li>
+          <li>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures"
+              >New</a
+            >
+          </li>
+          <li><a href="#">Large</a></li>
+          <li><a href="#">Small</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+        <div class="container1">
+          <section class="card">
+              <h2>Home</h2>
+              <figure>
+    <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+    <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+  </figure>
+            <figure>
+    <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+    <figcaption>Fig.2 - Trulli, Puglia, Italy.</figcaption>
+  </figure>
+            <figure>
+    <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+    <figcaption>Fig.3 - Trulli, Puglia, Italy.</figcaption>
+  </figure>
+            <figure>
+    <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+    <figcaption>Fig.4 - Trulli, Puglia, Italy.</figcaption>
+  </figure>
+            <figure>
+    <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+    <figcaption>Fig.5 - Trulli, Puglia, Italy.</figcaption>
+  </figure>
+            <figure>
+    <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+    <figcaption>Fig.6 - Trulli, Puglia, Italy.</figcaption>
+  </figure>
+            <figure>
+    <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+    <figcaption>Fig.7 - Trulli, Puglia, Italy.</figcaption>
+  </figure>
+            <figure>
+    <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+    <figcaption>Fig.8 - Trulli, Puglia, Italy.</figcaption>
+  </figure>
+            <figure>
+    <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+    <figcaption>Fig.9 - Trulli, Puglia, Italy.</figcaption>
+  </figure>
+          </section>
+        </div>
+    <footer>
+      <p>
+        <code>&#169; </code><span id="currentYear"></span>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            var currentYear = new Date().getFullYear();
+            document.getElementById("currentYear").textContent = currentYear;
+          });
+        </script>
+        Alejandro I. Pérez <code>Caracas - Venezuela</code>
+      </p>
+      <p id="lastModified"></p>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var date = new Date(document.lastModified);
+          document.getElementById("lastModified").textContent =
+            "Last Modified: " + date;
+        });
+      </script>
+    </footer>
+    <script src="temples.js" defer></script>
+  </body>
+</html>
