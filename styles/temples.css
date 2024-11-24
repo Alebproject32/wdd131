@@ -14,7 +14,7 @@ header {
 
 header h1 { 
     color: white;  
-    margin: 1%;
+    margin: 15px;
     flex-grow: 1; 
 }
 
