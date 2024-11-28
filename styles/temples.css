@@ -25,8 +25,7 @@ h2 {
    padding: 10px;
 }
 
-nav ul {
-    list-style-type: none; 
+nav ul { 
     padding: 0; 
     text-align: center;
     display: flex;
