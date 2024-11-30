@@ -16,7 +16,8 @@
     <header>
       <h1>Temple Album</h1>
       <nav>
-        <ul>
+        <span class="menu-icon">☰</span>
+        <ul id="nav-list">
           <li><a href="https://www.linkedin.com/">Home</a></li>
           <li><a href="https://byui.instructure.com/">Old</a></li>
           <li>
@@ -27,6 +28,7 @@
           <li><a href="#">Large</a></li>
           <li><a href="#">Small</a></li>
         </ul>
+        <span class="close-icon">✖</span>
       </nav>
     </header>
     <main>
@@ -122,6 +124,25 @@
             var date = new Date(document.lastModified);
             document.getElementById("lastModified").textContent =
               "Last Modified: " + date;
+          });
+        </script>
+        <script>
+          document.addEventListener("DOMContentLoaded", function () {
+            const menuIcon = document.getElementById(".menu-icon");
+            const closeIcon = document.getElementById(".close-icon");
+            const navUl = document.getElementById("nav-list");
+
+            menuIcon.addEventListener("click", () => {
+              navUl.classList.toggle("active");
+              menuIcon.classList.add("hidden");
+              closeIcon.style.display = "block";
+            });
+
+            closeIcon.addEventListener("click", () => {
+              navUl.classList.remove("active");
+              menuIcon.classList.remove("hidden");
+              closeIcon.style.display = "none";
+            });
           });
         </script>
       </footer>

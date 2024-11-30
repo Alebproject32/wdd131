@@ -25,31 +25,50 @@ h2 {
    padding: 10px;
 }
 
-nav ul { 
-    padding: 0; 
-    text-align: center;
-    display: flex;
-    justify-content: flex-end;
-	flex-direction: row;
+@media (max-width: 768px) {
+    nav ul { 
+        padding: 0; 
+        text-align: center;
+        display: flex;
+        justify-content: flex-end;
+    	flex-direction: column;
+        width: 100%;
 
+    }
+
+    nav ul li {
+        display: inline; 
+        margin: 0 15px;
+    }
+
+    nav ul li a { 
+        display: flex;
+        color: white; 
+        text-decoration: none; 
+        font-weight: lighter; 
+    }
+
+    nav a:hover { 
+        text-decoration: underline; 
+    }
+    .menu-icon { 
+        display: block; 
+        color: white;
+    } 
+
+    .close-icon { 
+        display: none;
+        color: white;
+    }
+
+    nav ul.active + .close-icon { 
+        display: block; 
+    } 
+
+    .menu-icon.hidden { 
+        display: none; 
+    }
 }
-
-nav ul li {
-    display: inline; 
-    margin: 0 15px;
-}
-
-nav ul li a { 
-    display: flex;
-    color: white; 
-    text-decoration: none; 
-    font-weight: lighter; 
-}
-
-nav a:hover { 
-    text-decoration: underline; 
-}
-
 main {
     display: grid;
 }
