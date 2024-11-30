@@ -73,18 +73,15 @@
       </div>
       <footer>
         <p>
-          <code>&#169; </code><span id="currentYear"></span>
-          <script>
-            document.addEventListener("DOMContentLoaded", function () {
-              var currentYear = new Date().getFullYear();
-              document.getElementById("currentYear").textContent = currentYear;
-            });
-          </script>
-          Alejandro I. Pérez <code>Caracas - Venezuela</code>
+          <code>&#169;</code> <span id="currentYear"></span> Alejandro I. Pérez
+          <code>Caracas - Venezuela</code>
         </p>
         <p id="lastModified"></p>
         <script>
           document.addEventListener("DOMContentLoaded", function () {
+            var currentYear = new Date().getFullYear();
+            document.getElementById("currentYear").textContent = currentYear;
+
             var date = new Date(document.lastModified);
             document.getElementById("lastModified").textContent =
               "Last Modified: " + date;
@@ -92,8 +89,8 @@
         </script>
         <script>
           document.addEventListener("DOMContentLoaded", function () {
-            const menuIcon = document.getElementById(".menu-icon");
-            const closeIcon = document.getElementById(".close-icon");
+            const menuIcon = document.querySelector(".menu-icon");
+            const closeIcon = document.querySelector(".close-icon");
             const navUl = document.getElementById("nav-list");
 
             menuIcon.addEventListener("click", () => {

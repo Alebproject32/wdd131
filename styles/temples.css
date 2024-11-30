@@ -1,7 +1,7 @@
 body {
-    font-family: 'Times New Roman', Times, serif; 
+    font-family: var('Times New Roman', Times, serif); 
     font-size: 16px;
-    background-color: #f4f4f4;
+    background-color: var(#f4f4f4);
     margin: 0; 
     padding: 0;
 }
@@ -9,7 +9,7 @@ body {
 header { 
     display: flex;
     align-items: center;
-    background-color: #4b0082;
+    background-color: var(#4b0082);
     padding: 10px 0; 
 } 
 
@@ -65,7 +65,7 @@ h2 {
         display: block; 
     } 
 
-    .menu-icon .hidden { 
+    .menu-icon.hidden { 
         display: none; 
     }
 }
@@ -96,7 +96,7 @@ main {
 
 
 footer {
-    background-color: #4b0082;
+    background-color: var(#4b0082);
     color: white;
     text-align: center;
 }
