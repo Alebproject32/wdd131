@@ -1,7 +1,13 @@
+:root {
+    --primary-color: #4b0082; 
+    --background-color: #f4f4f4; 
+    --font-family: 'Times New Roman', Times, serif;
+}
+
 body {
-    font-family: var('Times New Roman', Times, serif); 
+    font-family: var(--font-family); 
     font-size: 16px;
-    background-color: var(#f4f4f4);
+    background-color: var(--background-color);
     margin: 0; 
     padding: 0;
 }
@@ -9,7 +15,7 @@ body {
 header { 
     display: flex;
     align-items: center;
-    background-color: var(#4b0082);
+    background-color: var(--primary-color);
     padding: 10px 0; 
 } 
 
@@ -41,7 +47,7 @@ h2 {
         margin: 0 15px;
     }
 
-    nav ul li a { 
+    nav .nav-list li a { 
         display: flex;
         color: white; 
         text-decoration: none; 
@@ -96,7 +102,7 @@ main {
 
 
 footer {
-    background-color: var(#4b0082);
+    background-color: var(--primary-color);
     color: white;
     text-align: center;
 }

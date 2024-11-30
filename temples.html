@@ -18,13 +18,9 @@
       <nav>
         <span class="menu-icon">☰</span>
         <ul id="nav-list">
-          <li><a href="https://www.linkedin.com/">Home</a></li>
-          <li><a href="https://byui.instructure.com/">Old</a></li>
-          <li>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures"
-              >New</a
-            >
-          </li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Old</a></li>
+          <li><a href="#">New</a></li>
           <li><a href="#">Large</a></li>
           <li><a href="#">Small</a></li>
         </ul>
@@ -71,43 +67,43 @@
           <figcaption>Fig.9 - Caurimare, Caracas, Venezuela.</figcaption>
         </figure>
       </div>
-      <footer>
-        <p>
-          <code>&#169;</code> <span id="currentYear"></span> Alejandro I. Pérez
-          <code>Caracas - Venezuela</code>
-        </p>
-        <p id="lastModified"></p>
-        <script>
-          document.addEventListener("DOMContentLoaded", function () {
-            var currentYear = new Date().getFullYear();
-            document.getElementById("currentYear").textContent = currentYear;
-
-            var date = new Date(document.lastModified);
-            document.getElementById("lastModified").textContent =
-              "Last Modified: " + date;
-          });
-        </script>
-        <script>
-          document.addEventListener("DOMContentLoaded", function () {
-            const menuIcon = document.querySelector(".menu-icon");
-            const closeIcon = document.querySelector(".close-icon");
-            const navUl = document.getElementById("nav-list");
-
-            menuIcon.addEventListener("click", () => {
-              navUl.classList.toggle("active");
-              menuIcon.classList.add("hidden");
-              closeIcon.style.display = "block";
-            });
-
-            closeIcon.addEventListener("click", () => {
-              navUl.classList.remove("active");
-              menuIcon.classList.remove("hidden");
-              closeIcon.style.display = "none";
-            });
-          });
-        </script>
-      </footer>
-      <script src="temples.js" defer></script>
     </main>
+    <footer>
+      <p>
+        <code>&#169;</code> <span id="currentYear"></span> Alejandro I. Pérez
+        <code>Caracas - Venezuela</code>
+      </p>
+      <p id="lastModified"></p>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var currentYear = new Date().getFullYear();
+          document.getElementById("currentYear").textContent = currentYear;
+
+          var date = new Date(document.lastModified);
+          document.getElementById("lastModified").textContent =
+            "Last Modified: " + date;
+        });
+      </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const menuIcon = document.querySelector(".menu-icon");
+          const closeIcon = document.querySelector(".close-icon");
+          const navUl = document.getElementById("nav-list");
+
+          menuIcon.addEventListener("click", () => {
+            navUl.classList.toggle("active");
+            menuIcon.classList.add("hidden");
+            closeIcon.style.display = "block";
+          });
+
+          closeIcon.addEventListener("click", () => {
+            navUl.classList.remove("active");
+            menuIcon.classList.remove("hidden");
+            closeIcon.style.display = "none";
+          });
+        });
+      </script>
+    </footer>
+    <script src="temples.js" defer></script>
   </body>
 </html>
