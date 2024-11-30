@@ -65,7 +65,7 @@ h2 {
         display: block; 
     } 
 
-    .menu-icon.hidden { 
+    .menu-icon .hidden { 
         display: none; 
     }
 }
