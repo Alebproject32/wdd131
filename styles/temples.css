@@ -33,13 +33,9 @@ h2 {
 
 @media (max-width: 768px) {
     nav ul { 
-        padding: 0; 
-        text-align: center;
-        display: flex;
-        justify-content: flex-end;
-    	flex-direction: column;
+        display: none; 
+        flex-direction: column; 
         width: 100%;
-
     }
 
     nav ul li {
