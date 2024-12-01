@@ -14,6 +14,7 @@ body {
 
 header { 
     display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--primary-color);
     padding: 10px 0; 
@@ -38,17 +39,16 @@ h2 {
         width: 100%;
     }
 
-    nav ul li {
-        display: inline; 
-        margin: 0 15px;
+    nav ul.active {
+        display: flex; 
     }
 
-    nav .nav-list li a { 
-        display: flex;
-        color: white; 
-        text-decoration: none; 
-        font-weight: lighter; 
+    nav ul li {
+        text-align: center; 
+        padding: 10px; 
+        
     }
+
 
     nav a:hover { 
         text-decoration: underline; 
@@ -59,7 +59,9 @@ h2 {
     } 
 
     .close-icon { 
-        display: none;
+        display: none; 
+        font-size: 30px; 
+        cursor: pointer; 
         color: white;
     }
 
