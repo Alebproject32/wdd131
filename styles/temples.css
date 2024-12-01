@@ -49,6 +49,14 @@ h2 {
         
     }
 
+    nav ul li a { 
+        display: inline-flex;
+        color: white; 
+        text-decoration: none; 
+        font-weight: lighter; 
+        padding: 10px;
+        
+    }
 
     nav a:hover { 
         text-decoration: underline; 
