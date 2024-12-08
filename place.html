@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Los Roques Archipelago</title>
+    <meta name="author" content="Alejandro I. Pérez" />
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals - Alejandro Isaac Pérez Brito, This assignment is about a country page or some place I would like to visit someday, sharing relevant information with the users as well to practice my proficiency in HTML, CSS and JavaScript."
+    />
+    <link rel="stylesheet" href="styles/place.css" />
+    <link rel="stylesheet" href="styles/place-large.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Los Roques Archipelago</h1>
+      </header>
+      <main>
+        <section class="container_1">
+          <figure>
+            <picture>
+              <source
+                srcset="images/Los_Roques_large.webp"
+                media="(min-width: 768px)"
+              />
+              <img
+                src="images/Los_Roques_small.webp"
+                alt="Los Roques Archipelago"
+              />
+              <div class="data">
+                <h2 class="label">Data</h2>
+                <p>Population: 1.500 permanent residents</p>
+              </div>
+              <section class="weather">
+                <h3>Weather ⛅</h3>
+                <p>Temperature: 26°C</p>
+                <p>Feels Like: 28°C</p>
+                <p>Wind: 13 km/h from East</p>
+                <p>Wind Chill: <span id="windChill">N/A</span></p>
+              </section>
+            </picture>
+          </figure>
+        </section>
+      </main>
+      <footer>
+        <p>
+          <code>&#169;</code> <span id="currentYear"></span> Alejandro I. Pérez
+          <code>Caracas - Venezuela</code>
+        </p>
+        <p id="lastModified"></p>
+      </footer>
+    </div>
+    <script src="scripts/place.js" defer></script>
+  </body>
+</html>

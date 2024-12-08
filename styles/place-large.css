@@ -1,0 +1,66 @@
+@media (min-width: 768px) {
+    :root {
+        --font-family-header: 'Cursive', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        --font-family-body: 'Sans-serif', Arial, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        --primary-color: #f5f5dc; /* Pearl */
+        --header-footer-color: #009688; /* Teal */
+        --label-color: #4CAF50; /* Green */
+    }
+    
+    body {
+        font-family: var(--font-family-body);
+        background-color: var(--primary-color);
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        color: white;
+        background-color: var(--header-footer-color);
+        font-size: 2em;
+        padding: 20px;
+        text-align: center;
+        font-family: var(--font-family-header);
+    }
+    
+    .content {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+    }
+    
+    .sidebar {
+        background-color: var(--label-color);
+        color: white;
+        padding: 20px;
+        width: 10%;
+    }
+    
+    .main {
+        width: 65%;
+    }
+    
+    footer {
+        background-color: var(--header-footer-color);
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 0.8em;
+    }
+    
+    .data, .weather {
+        margin-bottom: 20px;
+    }
+    
+    .data h2, .weather h2 {
+        background-color: #00BCD4;
+        color: white;
+        padding: 10px;
+        margin: 0;
+    }
+    
+    .data p, .weather p {
+        margin: 10px 0;
+    }
+    
+}
