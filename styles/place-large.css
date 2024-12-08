@@ -28,6 +28,7 @@
         justify-content: space-between;
         padding: 20px;
     }
+
     
     .sidebar {
         background-color: var(--label-color);
@@ -37,7 +38,9 @@
     }
     
     .main {
-        width: 65%;
+        background-image: url("images/Los_Roques_large.webp");
+        background-size: cover;
+        width: 100%;
     }
     
     footer {
