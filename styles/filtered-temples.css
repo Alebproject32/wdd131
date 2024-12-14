@@ -1,0 +1,130 @@
+:root {
+    --primary-color: #4b0082; 
+    --background-color: #f4f4f4; 
+    --font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    font-family: var(--font-family); 
+    font-size: 16px;
+    background-color: var(--background-color);
+    margin: 0; 
+    padding: 0;
+}
+
+header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 10px 0; 
+} 
+
+header h1 { 
+    color: white;  
+    margin: 15px;
+    flex-grow: 1; 
+}
+
+h2, h3 {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+p {
+    text-align: center;
+    margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+    nav ul { 
+        display: none; 
+        flex-direction: column; 
+        width: 100%;
+    }
+
+    nav ul.active {
+        display: flex; 
+    }
+
+    nav ul li {
+        text-align: center; 
+        padding: 10px; 
+    }
+
+    nav ul li a { 
+        display: inline-flex;
+        color: white; 
+        text-decoration: none; 
+        font-weight: lighter; 
+        padding: 10px;
+    }
+
+    nav a:hover { 
+        text-decoration: underline; 
+    }
+    
+    .menu-icon { 
+        display: block; 
+        color: white;
+    } 
+
+    .close-icon { 
+        display: none; 
+        font-size: 30px; 
+        cursor: pointer; 
+        color: white;
+    }
+
+    nav ul.active + .close-icon { 
+        display: block; 
+    } 
+
+    .menu-icon.hidden { 
+        display: none; 
+    }
+}
+
+main {
+    display: grid;
+    padding: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+
+
+
+.grid-container section {
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.grid-container p {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.grid-container img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+}
+
