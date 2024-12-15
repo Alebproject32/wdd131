@@ -2,10 +2,12 @@
     --primary-color: #4b0082; 
     --background-color: #f4f4f4; 
     --font-family: 'Times New Roman', Times, serif;
+    --font-family-primary: 'Roboto', sans-serif; 
+    --font-family-secondary: 'Open Sans', sans-serif;
 }
 
 body {
-    font-family: var(--font-family); 
+    font-family: var(--font-family-primary); 
     font-size: 16px;
     background-color: var(--background-color);
     margin: 0; 
@@ -16,17 +18,20 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: var(--font-family);
     background-color: var(--primary-color);
     padding: 10px 0; 
 } 
 
 header h1 { 
+    font-family: var(--font-family);
     color: white;  
     margin: 15px;
     flex-grow: 1; 
 }
 
 h2, h3 {
+    font-family: var(--font-family);
     text-align: center;
     margin: 10px;
     padding: 10px;
@@ -123,6 +128,7 @@ main {
 }
 
 footer {
+    font-family: var(--font-family);
     background-color: var(--primary-color);
     color: white;
     text-align: center;
