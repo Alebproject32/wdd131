@@ -45,8 +45,28 @@
     nav a:hover { 
         text-decoration: underline; 
     }
+    .menu-icon { 
+        display: block; 
+        color: white;
+    } 
+
+    .close-icon { 
+        display: none; 
+        font-size: 30px; 
+        cursor: pointer; 
+        color: white;
+    }
+
+    nav ul.active + .close-icon { 
+        display: block; 
+    } 
+
+    .menu-icon.hidden { 
+        display: none; 
+    }
 
     .box1, .box2, .box3 {
+        display: block;
         border: 2px solid pink;
         padding: 10px;
         margin: 6px;
