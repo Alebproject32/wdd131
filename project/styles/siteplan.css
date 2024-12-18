@@ -1,51 +1,56 @@
 :root {
---font-family-primary: "Great Vibes", serif;
---font-family-secundary: "Merriweather", static;
---background-color-primary: rgba(220, 20, 60, 0.7);
---background-color-secundary: white;
---background-color-third: lavender;
+    --font-family-primary: "Great Vibes", serif;
+    --font-family-secondary: "Merriweather", serif;
+    --background-color-primary: rgba(220, 20, 60, 0.7);
+    --background-color-secondary: white;
+    --background-color-third: lavender;
 }
 
 @media (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     header {
         font-family: var(--font-family-primary);
         font-size: 35px;
         font-weight: lighter;
         color: red;
         text-align: center;
-    }
-
-    .box1 {
-        border: 2px solid pink;
-        padding: 10px;
-        margin: 6px;
-    }
-
-
-    .box2 ul li {
-        display: none; 
-        flex-direction: column; 
         width: 100%;
+    }
 
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        width: 100%;
     }
 
     nav ul li a {
-        display: inline-flex;
-        color:aliceblue;
+        display: block;
+        color: aliceblue;
         text-decoration: none;
-        font-weight: lighter; 
+        font-weight: lighter;
         padding: 10px;
+        text-align: center;
     }
 
     nav a:hover { 
         text-decoration: underline; 
     }
 
-    .box3 {
+    .box1, .box2, .box3 {
         border: 2px solid pink;
-        padding: 30px;
-        margin: 1.5px;
-        align-items: center;
+        padding: 10px;
+        margin: 6px;
+        width: 100%;
     }
 
     footer {
@@ -54,7 +59,8 @@
         margin: 2px;
         text-align: center;
         color: crimson;
-        font-family: var(--font-family-secundary);
+        font-family: var(--font-family-secondary);
         background-color: var(--background-color-third);
+        width: 100%;
     }
 }
