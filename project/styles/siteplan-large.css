@@ -3,7 +3,7 @@
 
         header {
             font-family: var(--font-family-primary);
-            font-size: 35px;
+            font-size: 200%;
             font-weight: lighter;
             color: red;
             text-align: center;

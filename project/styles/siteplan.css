@@ -15,7 +15,7 @@
 
     header {
         font-family: var(--font-family-primary);
-        font-size: 35px;
+        font-size: 200%;
         font-weight: lighter;
         color: red;
         text-align: center;
@@ -40,6 +40,7 @@
         font-weight: lighter;
         padding: 10px;
         text-align: center;
+        background-color: var(--background-color-primary);
     }
 
     nav a:hover { 
@@ -52,7 +53,7 @@
 
     .close-icon { 
         display: none; 
-        font-size: 30px; 
+        font-size: 30%; 
         cursor: pointer; 
         color: white;
     }
@@ -68,9 +69,11 @@
     .box1, .box2, .box3 {
         display: block;
         border: 2px solid pink;
+        box-sizing: border-box;
         padding: 10px;
         margin: 6px;
         width: 100%;
+        text-align: justify;
     }
 
     footer {
