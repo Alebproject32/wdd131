@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Site name: My project I said it will called entrepreneurship, 
+    but with a little time to thinking I will call it Dulezzua Bakery-->
+
+    <!-- This name represent the entrepreneurship of my wife about cake
+     and bakery with deliciuos combination of flavors.
+     This is our Instagram: @dulezzuabakery -->
+    <title>Dulezzua Bakery</title>
+    <meta name="author" content="Alejandro I. Pérez" />
+    <!--Site Purpose: My website will have the main purpose to show our clients 
+    the differents styles of cake, with several techniques, colors, materials, 
+    designes for holidays, special events with different kind of flavors in cakes and bakery. 
+    The second purpose is the client could create their own budget and make a purchase. -->
+
+    <!--Scenarios:  
+    If a make a selection from your catalogo of cake on your website: 
+    * Where will you see my choice?
+    * Is it possible to create my own cake with your different flavors?  -->
+
+    <!-- Color Schema:
+     My primary color will be the red for the head used in the letters or name.
+     Second primary color will be Crimson and Lavender in nav bar, footer and so on.
+     Third primary color will be white to background in the main area.-->
+
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals - Alejandro Isaac Pérez Brito, 
+      I am creating my site plan about my website to offer our bakery products to all our clients."
+    />
+    <!--Typography:
+     My primary family font "Great Vibes" or font "Satisfy" is for heading.
+     The second family font   "Merriweather" is for paragraphs.-->
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+    </style>
+    <link rel="stylesheet" href="styles/siteplan.css" />
+    <link rel="stylesheet" href="styles/siteplan-large.css" />
+  </head>
+  <body>
+    <div class="box1" id="box1">
+      <header>
+        <h1> DulezzuaBakery </h1>
+    </div>
+      <nav>
+        <div class="box2" id="box2">
+          <span class="menu-icon" id="menu-icon"></span>
+        <ul id="nav-list">
+          <li>
+            <a href="#" id="Link1">Link 1</a>
+            <a href="#" id="Link2">Link 2</a>
+            <a href="#" id="Link3">Link 3</a>
+          </li>
+        </ul>
+        <span class="close-icon" id="close-icon"></span>
+        </div>
+      </nav>
+    </header>
+    <div class="box3" id="box3">
+    <main>
+      <img
+        src="images/IMG-20200526-WA0011.jpg"
+        alt="Elis cake"
+        loading="lazy"
+        width="300"
+        height="350"
+      />
+      <img
+        src="images/wireframeMobileview.JPG"
+        alt="Wireframe Mobile View"
+        loading="lazy"
+        width="400"
+        height="300"
+      />
+      <img
+        src="images/wireframeLargeview.JPG"
+        alt="Wireframe Large View"
+        loading="lazy"
+        width="400"
+        height="300"
+      />
+    </div>
+    </main>
+    <footer>
+      <p>
+        <code>&#169;</code> <span id="currentYear"></span> DulezzuaBakery C.A.
+        <code>Caracas - Venezuela</code>
+      </p>
+      <p id="lastModified"></p>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var currentYear = new Date().getFullYear();
+          document.getElementById("currentYear").textContent = currentYear;
+
+          var date = new Date(document.lastModified);
+          document.getElementById("lastModified").textContent =
+            "Last Modified: " + date;
+        });
+      </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const menuIcon = document.querySelector("menu-icon");
+          const closeIcon = document.querySelector("close-icon");
+          const navUl = document.getElementById("nav-list");
+
+          menuIcon.addEventListener("click", () => {
+            navUl.classList.toggle("active");
+            menuIcon.classList.add("hidden");
+            closeIcon.style.display = "block";
+          });
+
+          closeIcon.addEventListener("click", () => {
+            navUl.classList.remove("active");
+            menuIcon.classList.remove("hidden");
+            closeIcon.style.display = "none";
+          });
+        });
+      </script>
+    </footer>
+    <script src="scripts/siteplan.js" defer></script>
+    </footer>
+  </body>
+</html>

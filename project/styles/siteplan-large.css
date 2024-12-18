@@ -1,0 +1,52 @@
+    
+    @media only screen and (min-width: 768px) { 
+
+        header {
+            font-family: var(--font-family-primary);
+            font-size: 35px;
+            font-weight: lighter;
+            color: red;
+            text-align: center;
+        }
+
+        .box1 {
+            border: 2px solid pink;
+            padding: 10px;
+            margin: 6px;
+        }
+
+        .box2 ul li {
+            display: flex;
+            justify-content: space-around;
+            border: 3px solid white;
+            padding: 15px;
+            margin: 20px;
+            font-family: var(--font-family-secundary);
+            background-color: var(--background-color-primary);
+            text-align: center;
+        
+        }
+
+        nav ul li a {
+            background-color: var(--background-color);
+            color:aliceblue;
+            text-decoration: none;
+        }
+
+        .box3 {
+            border: 2px solid pink;
+            padding: 30px;
+            margin: 1.5px;
+            align-items: center;
+        }
+
+        footer {
+            border: 2px solid white;
+            padding: 20px;
+            margin: 2px;
+            text-align: center;
+            color: crimson;
+            font-family: var(--font-family-secundary);
+            background-color: var(--background-color-third);
+        }
+    }
