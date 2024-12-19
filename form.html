@@ -9,11 +9,19 @@
       name="description"
       content="WDD 131 - Dynamic Web Fundamentals - Alejandro Isaac Pérez Brito, I am currently study my major in Professional Study at BYU-Idaho through BYU Pathway Worldwide to get a new carrer with the English Language and Software Development."
     />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+    </style>
     <link rel="stylesheet" href="styles/form.css" />
     <link rel="stylesheet" href="styles/form-large.css" />
   </head>
   <body>
-    <header>Product Review</header>
+    <header>
+      <h1> Product Review </h1>
+    </header>
     <main>
       <form method="get" action="review.html">
         <!-- Product Name -->
@@ -61,8 +69,8 @@
         <!-- Useful Features -->
         <fieldset>
           <legend>
-            Which features are more relevant for you from our products?
-            (Check all that apply)
+            Which features are more relevant for you from our products? (Check
+            all that apply)
           </legend>
           <label>
             <input
@@ -91,6 +99,15 @@
             />
             Our promotions.
           </label>
+          <label>
+            <input
+              type="checkbox"
+              id="feature-3"
+              name="features"
+              value="Feature 3"
+            />
+            Cold cake.
+          </label>
         </fieldset>
 
         <!-- Written Review -->
@@ -102,7 +119,7 @@
         <input type="text" id="user-name" name="userName" />
 
         <!-- Form Submission -->
-        <input type="submit" value="Submit Review" />
+        <input type="submit" value="Submit" />
       </form>
     </main>
     <!-- Common Footer Content -->

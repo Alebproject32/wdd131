@@ -1,5 +1,10 @@
+:root {
+    --font-family-primary: "Great Vibes", serif;
+    --font-family-secondary: "Merriweather", serif;
+}
+
 @media only screen and (max-width: 768rem) {
-    header {
+    h1 {
         font-family: Times New, serif;
         font-size: 1.5rem;
         text-align: center;
