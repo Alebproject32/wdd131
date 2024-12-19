@@ -64,14 +64,11 @@
     
     label, .checkbox {
          margin-bottom: 10px;
-         }
+    }
      
 
-      p {
-        font-style: italic;
-      }
-
       legend {
+        font-style: italic;
           font-weight: bold;
       }
 
