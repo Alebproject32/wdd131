@@ -6,7 +6,7 @@
     --background-color-third: lavender;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768rem) {
     body {
         display: flex;
         flex-direction: column;

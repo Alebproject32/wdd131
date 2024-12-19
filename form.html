@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 131 - Dynamic Web Fundamentals - Alejandro I. Pérez</title>
+    <meta name="author" content="Alejandro I. Pérez" />
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals - Alejandro Isaac Pérez Brito, I am currently study my major in Professional Study at BYU-Idaho through BYU Pathway Worldwide to get a new carrer with the English Language and Software Development."
+    />
+    <link rel="stylesheet" href="styles/form.css" />
+    <link rel="stylesheet" href="styles/form-large.css" />
+  </head>
+  <body>
+    <header>Product Review</header>
+    <main>
+      <form method="get" action="review.html">
+        <!-- Product Name -->
+        <label for="product-name">Product Name</label>
+        <select id="product-name" name="productName" required>
+          <option value="" disabled selected>Select a Product ...</option>
+        </select>
+
+        <!-- Overall Rating -->
+        <fieldset>
+          <legend>Overall Rating</legend>
+          <label>
+            <input
+              type="radio"
+              id="rating-1"
+              name="rating"
+              value="1"
+              required
+            />
+            1 ☆
+          </label>
+          <label>
+            <input type="radio" id="rating-2" name="rating" value="2" /> 2 ☆☆
+          </label>
+          <label>
+            <input type="radio" id="rating-3" name="rating" value="3" /> 3 ☆☆☆
+          </label>
+          <label>
+            <input type="radio" id="rating-4" name="rating" value="4" /> 4 ☆☆☆☆
+          </label>
+          <label>
+            <input type="radio" id="rating-5" name="rating" value="5" /> 5 ☆☆☆☆☆
+          </label>
+        </fieldset>
+
+        <!-- Date of Installation -->
+        <label for="installation-date">Date of Installation</label>
+        <input
+          type="date"
+          id="installation-date"
+          name="installationDate"
+          required
+        />
+
+        <!-- Useful Features -->
+        <fieldset>
+          <legend>
+            Which features are more relevant for you from our products?
+            <p>(Check all that apply)</p>
+          </legend>
+          <label>
+            <input
+              type="checkbox"
+              id="feature-1"
+              name="features"
+              value="Feature 1"
+            />
+            Combination of flavors.
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              id="feature-2"
+              name="features"
+              value="Feature 2"
+            />
+            Theme about one specific topic.
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              id="feature-3"
+              name="features"
+              value="Feature 3"
+            />
+            Our promotions.
+          </label>
+        </fieldset>
+
+        <!-- Written Review -->
+        <label for="review">Written Review</label>
+        <textarea id="review" name="review"></textarea>
+
+        <!-- User Name -->
+        <label for="user-name">User Name</label>
+        <input type="text" id="user-name" name="userName" />
+
+        <!-- Form Submission -->
+        <input type="submit" value="Submit Review" />
+      </form>
+    </main>
+    <!-- Common Footer Content -->
+    <footer>
+      <p>
+        <code>&#169;</code> <span id="currentYear"></span> Alejandro I. Pérez
+        <code>Caracas - Venezuela</code>
+      </p>
+      <p id="lastModified"></p>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var currentYear = new Date().getFullYear();
+          document.getElementById("currentYear").textContent = currentYear;
+
+          var date = new Date(document.lastModified);
+          document.getElementById("lastModified").textContent =
+            "Last Modified: " + date;
+        });
+      </script>
+    </footer>
+    <script src="scripts/form.js" defer></script>
+  </body>
+</html>
