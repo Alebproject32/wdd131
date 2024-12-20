@@ -14,8 +14,8 @@
 
 
       body {
-          font-family: Arial, sans-serif;
-          background-color: #f4f4f4;
+        font-family: var(--font-family-secondary);
+        background-image: url(https://alebproject32.github.io/wdd131/images/background-bakery-images.jpg);
           margin: 0;
           padding: 0;
       }
@@ -24,8 +24,8 @@
           max-width: 600px;
           margin: 20px auto;
           padding: 20px;
-          background-color: white;
-          border: 1px solid #ccc;
+          background-color: #dab894;
+          border: 1px solid brown;
           border-radius: 10px;
       }
 
@@ -49,7 +49,7 @@
       }
 
       fieldset {
-          border: 1px solid #ccc;
+          border: 1px solid brown;
           border-radius: 5px;
           padding: 10px;
           margin-bottom: 20px;

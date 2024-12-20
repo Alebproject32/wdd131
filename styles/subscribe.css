@@ -11,9 +11,9 @@
         font-family: Times New, serif;
         font-size: 1.5rem;
         text-align: center;
-        background-color: #333;
+        background-color: var(--background-color-third);
         width: 40%;
-        color: white;
+        color: brown;
         padding: 1%;
         margin-left: 29%;
         margin-top: 8px;
@@ -22,8 +22,8 @@
 
 
       body {
-          font-family: Times New, serif;
-          background-color: #f4f4f4;
+          font-family: var(--font-family-secondary);
+          background-image: url(https://alebproject32.github.io/wdd131/images/background-bakery-images.jpg);
           margin: 0;
           padding: 0;
       }
@@ -32,8 +32,8 @@
           max-width: 600px;
           margin: 20px auto;
           padding: 20px;
-          background-color: white;
-          border: 1px solid #ccc;
+          background-color:  #dab894;
+          border: 1px solid brown;
           border-radius: 10px;
       }
 
@@ -57,7 +57,7 @@
       }
 
       fieldset {
-          border: 1px solid #ccc;
+          border: 1px solid brown;
           border-radius: 5px;
           padding: 10px;
           margin-bottom: 20px;
@@ -92,6 +92,6 @@
           text-align: center;
           padding: 10px;
           background-color: var(--background-color-third);
-          color: var(--background-color-primary);
+          color: brown;
       }
 }
