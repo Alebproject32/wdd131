@@ -1,0 +1,10 @@
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: beige;
+
+    }
+
+    h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}

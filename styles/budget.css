@@ -1,4 +1,4 @@
-@media only screen and (man-width: 768px) {
+@media only screen and (max-width: 768px) {
     body {
         background-image: url(https://alebproject32.github.io/wdd131/images/website-underconstruction.jpg);
         background-repeat: no-repeat;
