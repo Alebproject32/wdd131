@@ -1,0 +1,84 @@
+@media only screen and (min-width: 768rem) {
+    header {
+        font-family: Times New, serif;
+        font-size: 1.5rem;
+        text-align: center;
+        background-color: #333;
+        width: 40%;
+        color: white;
+        padding: 1%;
+        margin-left: 29%;
+        margin-top: 8px;
+        border-radius: 0.5rem; 
+      }
+
+
+      body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+          margin: 0;
+          padding: 0;
+      }
+
+      form {
+          max-width: 600px;
+          margin: 20px auto;
+          padding: 20px;
+          background-color: white;
+          border: 1px solid #ccc;
+          border-radius: 10px;
+      }
+
+      label {
+          display: inline-block;
+          text-align: center;
+          margin-bottom: 5px;
+          font-weight: bold;
+      }
+
+      input, select, textarea {
+          width: 100%;
+          padding: 5px;
+          margin-bottom: 20px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+      }
+
+      textarea {
+          height: 10rem;
+      }
+
+      fieldset {
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          padding: 10px;
+          margin-bottom: 20px;
+          display: flex;
+          justify-content: space-between;
+      }
+
+
+      legend {
+          font-weight: bold;
+      }
+
+      input[type="submit"] {
+          background-color: #4CAF50;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+
+      input[type="submit"]:hover {
+          background-color: #45a049;
+      }
+
+      footer {
+          text-align: center;
+          padding: 10px;
+          background-color: #333;
+          color: white;
+      }
+}

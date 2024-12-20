@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD 131 - Dynamic Web Fundamentals - Alejandro I. Pérez</title>
+    <meta name="author" content="Alejandro I. Pérez" />
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Web Fundamentals - Alejandro Isaac Pérez Brito, I am currently study my major in Professional Study at BYU-Idaho through BYU Pathway Worldwide to get a new carrer with the English Language and Software Development."
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+    </style>
+    <link rel="stylesheet" href="styles/subscribe.css" />
+    <link rel="stylesheet" href="styles/subscribe-large.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Subscribe Form</h1>
+    </header>
+    <main>
+      <form method="get" action="review.html">
+        <!-- Full Name -->
+        <label for="full-name">Full Name</label>
+        <label for="user-name">Name</label>
+        <input type="text" id="user-name" name="userName" />
+        <label for="user-name">Last Name</label>
+        <input type="text" id="user-name" name="userName" />
+
+        <!-- Birth Date -->
+        <label for="birth-date">Birth Date</label>
+        <input type="date" id="birth-date" name="birth-date" required />
+
+        <!-- Phone Number -->
+        <label for="Phone Number">Phone Number</label>
+        <input type="number" id="Phone" name="Phone" required />
+
+        <!-- Email -->
+        <label for="Email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <!-- Useful Features -->
+        <fieldset>
+          <legend>
+            Which is your favorite dessert? (Check all that apply)
+          </legend>
+          <label>
+            <input
+              type="checkbox"
+              id="feature-1"
+              name="features"
+              value="Feature 1"
+            />
+            Cold cake.
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              id="feature-2"
+              name="features"
+              value="Feature 2"
+            />
+            Cupcakes.
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              id="feature-3"
+              name="features"
+              value="Feature 3"
+            />
+            Donats.
+          </label>
+          <label>
+            <input
+              type="checkbox"
+              id="feature-4"
+              name="features"
+              value="Feature 4"
+            />
+            Other.
+          </label>
+        </fieldset>
+
+        <!-- Other -->
+        <label for="Other">Write your favorite dessert</label>
+        <textarea id="Other" name="Other"></textarea>
+
+        <!-- Form Submission -->
+        <input type="submit" value="submit" />
+      </form>
+    </main>
+    <!-- Common Footer Content -->
+    <footer>
+      <p>
+        <code>&#169;</code> <span id="currentYear"></span> Alejandro I. Pérez
+        <code>Caracas - Venezuela</code>
+      </p>
+      <p id="lastModified"></p>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var currentYear = new Date().getFullYear();
+          document.getElementById("currentYear").textContent = currentYear;
+
+          var date = new Date(document.lastModified);
+          document.getElementById("lastModified").textContent =
+            "Last Modified: " + date;
+        });
+      </script>
+    </footer>
+    <script src="scripts/subscribe.js" defer></script>
+  </body>
+</html>

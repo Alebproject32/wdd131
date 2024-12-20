@@ -3,7 +3,7 @@
     --font-family-secondary: "Merriweather", serif;
     --background-color-primary: rgba(220, 20, 60, 0.7);
     --background-color-secondary: white;
-    --background-color-third: lavender;
+    --background-color-third: rgba(230, 230, 250, 0.7);
 }
 
 @media (max-width: 768rem) {
@@ -23,9 +23,10 @@
     }
 
     nav ul {
-        display: flex;
+        display: block;
         flex-direction: column;
         width: 100%;
+       
     }
 
     nav ul li {
@@ -68,12 +69,17 @@
 
     .box1, .box2, .box3 {
         display: block;
-        border: 2px solid pink;
         box-sizing: border-box;
         padding: 10px;
-        margin: 6px;
+        margin: 0;
         width: 100%;
         text-align: justify;
+    }
+
+
+    img {
+        width: 50%;
+        height: 50%;
     }
 
     footer {
