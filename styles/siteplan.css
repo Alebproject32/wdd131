@@ -72,17 +72,18 @@
 
     .box1, .box2, .box3 {
         
-       
-        
         margin: 0;
         width: 100%;
         text-align: justify;
     }
 
 
-    img {
-        width: 50%;
-        height: 20%;
+    .box3, img {
+        display: inline-block;
+        justify-content: space-around;
+
+        width: 30%;
+        height: 30%;
         padding: 8px;
     }
 
