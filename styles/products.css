@@ -74,6 +74,14 @@
         display: none; 
     }
 
+    p {
+        display: inline;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: medium;
+        color: white;
+
+    }
+
     .box1, .box2, .box3 {
         
         margin: 0;
