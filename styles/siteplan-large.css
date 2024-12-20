@@ -10,7 +10,6 @@
         }
 
         .box1 {
-            border: 2px solid pink;
             padding: 10px;
             margin: 6px;
         }
@@ -19,8 +18,6 @@
             display: flex;
             justify-content: space-around;
             border: 3px solid white;
-            padding: 15px;
-            margin: 20px;
             font-family: var(--font-family-secundary);
             background-color: var(--background-color-primary);
             text-align: center;
@@ -34,7 +31,6 @@
         }
 
         .box3 {
-            border: 2px solid pink;
             padding: 30px;
             margin: 1.5px;
             align-items: center;
