@@ -92,6 +92,6 @@
           text-align: center;
           padding: 10px;
           background-color: var(--background-color-third);
-          color: white;
+          color: var(--background-color-primary);
       }
 }
