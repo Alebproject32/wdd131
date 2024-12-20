@@ -8,7 +8,7 @@
 
 @media (max-width: 768rem) {
     body {
-        display: grid;
+        display: flex;
         flex-direction: column;
         align-items: center;
         background-image: url(https://alebproject32.github.io/wdd131/images/donats.webp);
@@ -25,6 +25,7 @@
         font-weight: lighter;
         color: red;
         text-align: center;
+        text-shadow: 20px black;
         width: 100%;
     }
 
@@ -75,19 +76,19 @@
 
     .box1, .box2, .box3 {
         
-       
-        
         margin: 0;
         width: 100%;
-        text-align: justify;
     }
 
-
-    img {
+    .box3 {
+        display: flex;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        height: 50%;
         width: 50%;
-        height: 20%;
-        padding: 8px;
+        
     }
+
+    
 
     footer {
         border: 2px solid white;
