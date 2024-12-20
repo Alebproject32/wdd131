@@ -14,8 +14,8 @@
 
 
       body {
-        font-family: var(--font-family-secondary);
-        background-image: url(https://alebproject32.github.io/wdd131/images/background-bakery-images.jpg);
+          font-family: var(--font-family-secondary);
+          background-image: url(https://alebproject32.github.io/wdd131/images/background-bakery-images.jpg);
           margin: 0;
           padding: 0;
       }
