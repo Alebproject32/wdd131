@@ -24,8 +24,8 @@
         font-size: 200%;
         font-weight: lighter;
         color: red;
+        text-shadow: 3px 3px 2px #000;
         text-align: center;
-        text-shadow: 20px black;
         width: 100%;
     }
 

@@ -21,6 +21,7 @@
         font-size: 200%;
         font-weight: lighter;
         color: red;
+        text-shadow: 3px 3px 2px #000;
         text-align: center;
         width: 100%;
     }
@@ -78,9 +79,11 @@
     }
 
 
-    .box3, img {
+     img {
         display: inline-block;
         justify-content: space-around;
+        box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.5);
+        border-radius: 10%;
 
         width: 30%;
         height: 30%;
